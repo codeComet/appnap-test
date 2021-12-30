@@ -1,0 +1,26 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center">
+      <h1>Forgot Password</h1>
+      <%- include ("./messages") %>
+      <form action="/auth/forgot" method="POST">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="name"
+            id="username"
+            name="username"
+            class="form-control"
+            placeholder="Your username"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Send me a password reset link
+        </button>
+      </form>
+      <p class="mt-4">
+        Remember your password? <a href="/auth/login">Login</a>
+      </p>
+    </div>
+  </div>
+</div>
